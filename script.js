@@ -85,3 +85,29 @@ function justePrix(){
         result.innerHTML="<img src='images/kaamelott-arthur.gif'>";
     }
 }
+
+function firstBoucle(){
+    let result = document.getElementById("result");
+    for(i=0; i<=20; i += 2) {
+        result.textContent += i + " / ";
+    }
+}
+
+function boucleWhile(){
+    let mot = "";
+    let result= document.getElementById("result");
+
+    while(mot !== "stop"){
+        mot = prompt("Entrez un mot (stop pour arréter): ");
+        result.textContent += mot + "  ";
+    }
+
+    alert("fin de boucle");
+}
+
+function boucleDoWhile(){
+    let nombre = 0;
+    do{
+        nombre = prompt("Donner un nombre entre 0 et 10: ");
+    }while(nombre < 0 || nombre > 10 || isNaN(nombre));
+}
