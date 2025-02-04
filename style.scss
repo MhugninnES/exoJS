@@ -39,10 +39,14 @@ nav{
         }
 
         .exo_hover_page{
+            position:relative;
             .dropdown{
                 display:none;
                 position:absolute;
-                background-color: red;
+                top:100%;
+                left:0;
+                width:150%;
+                background-color: rgb(65, 134, 156);
             }
             &:hover{
                 .dropdown{

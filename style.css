@@ -35,10 +35,16 @@ nav ul li {
   padding: 10px 25px 10px 25px;
   border-radius: 10px;
 }
+nav ul .exo_hover_page {
+  position: relative;
+}
 nav ul .exo_hover_page .dropdown {
   display: none;
   position: absolute;
-  background-color: red;
+  top: 100%;
+  left: 0;
+  width: 150%;
+  background-color: rgb(65, 134, 156);
 }
 nav ul .exo_hover_page:hover .dropdown {
   display: block;

@@ -194,11 +194,20 @@ function moyenne(a, b, c){
 }
 
 function moyenneNoArg(){
-    let moyenne=0;
+    let somme=0;
     for(let i=0; i<arguments.length; i++){
-        moyenne += arguments[i]
+        somme += arguments[i]
     }
-    return moyenne /= arguments.length;
+    return somme /= arguments.length;
+    
+    console.log(moyenneNoArg(10,20,16,25,69));
 }
 
-console.log(moyenneNoArg(10,20,16,25,69,85));
+function exoFunction2(){
+    // let nombre = parseFloat(prompt("Entrez le nombre: "));
+    
+    function estPaire(a){
+        return a%2===0;
+    }
+    console.log(estPaire(parseFloat(prompt("Entrez un nombre: "))));
+}
