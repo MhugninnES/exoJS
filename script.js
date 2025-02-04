@@ -126,8 +126,65 @@ function exoBoucleSomme(){
     console.log(resultat);
 }
 
-function sortVoyelle(){
-    const voyelles = ["a", "e", "i", "o", "u", "y"];
-    let mot="anticonstitutionellement";
-    
+function countVoyelle(){
+    const VOYELLES = ["a", "e", "i", "o", "u", "y"];
+    let mot = prompt("Entrez un mot: ");
+    let compteur = 0;
+
+    // for(let i=0; i< mot.length; i++){
+    //     for(let j=0; j < voyelles.length; j++){
+    //         if(mot[i] === voyelles[j]){
+    //             compteur++;
+    //         }
+    //     }
+    // }
+
+    for(let i=0; i<mot.length; i++){
+        if(VOYELLES.includes(mot[i])){
+            compteur++;
+        }
+    }
+
+    console.log(compteur);
 }
+
+function pyramide(){
+    let star= "*";
+    let space=" ";
+    let result=document.getElementById("result");
+
+    for(let i=1; i<6; i++){
+        console.log(star.repeat(i));
+        result.innerHTML+=star.repeat(i) + "<br>";
+    }
+}
+
+function multiplicativeTable(){
+    let numberUser=parseFloat(prompt("Entrez un nombre: "));
+    let resultat = 0;
+    let affichage= document.getElementById("result");
+
+    for(let i=1; i<=10; i++){
+        resultat = numberUser*i;
+        console.log(numberUser + "x" + i + "=" + resultat);
+        affichage.innerHTML+=numberUser + "x" + i + "=" + resultat + "<br>";
+    }
+}
+
+function divisible(){
+    for(let i=1; i<=50; i++){
+        if(i % 3 === 0 && i % 5 === 0){
+            console.log(i);
+        }
+    }
+}
+
+function multiplication(a, b){
+    return a*b;
+}
+
+function direBonjour(nom){
+    console.log("bonjour", nom);
+    const direBonjour2=(nom) => console.log("bonjour " + nom);
+}
+    

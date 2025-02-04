@@ -24,6 +24,7 @@ nav{
         align-items: center;
         width:100%;
         list-style-type:none;
+        padding:0;
 
         a{
             text-decoration: none;
@@ -37,8 +38,16 @@ nav{
             border-radius: 10px;
         }
 
-        .exo_hover_page:hover{
-            
+        .exo_hover_page{
+            .dropdown{
+                display:none;
+                position:absolute;
+                background-color: red;
+
+                &:hover{
+                    display:block;
+                }
+            }
         }
     }
 }
