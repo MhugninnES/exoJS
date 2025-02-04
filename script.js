@@ -188,3 +188,17 @@ function direBonjour(nom){
     const direBonjour2=(nom) => console.log("bonjour " + nom);
 }
     
+function moyenne(a, b, c){
+    return (a+b+c)/3;
+    console.log(moyenne(5,16,11));
+}
+
+function moyenneNoArg(){
+    let moyenne=0;
+    for(let i=0; i<arguments.length; i++){
+        moyenne += arguments[i]
+    }
+    return moyenne /= arguments.length;
+}
+
+console.log(moyenneNoArg(10,20,16,25,69,85));

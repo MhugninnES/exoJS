@@ -43,8 +43,9 @@ nav{
                 display:none;
                 position:absolute;
                 background-color: red;
-
-                &:hover{
+            }
+            &:hover{
+                .dropdown{
                     display:block;
                 }
             }
