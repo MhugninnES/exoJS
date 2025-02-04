@@ -211,3 +211,18 @@ function exoFunction2(){
     }
     console.log(estPaire(parseFloat(prompt("Entrez un nombre: "))));
 }
+
+function exoFunction3(){
+    function tableMult(a, affichage){
+        let resultat = 0;
+        let calcul = 0;
+
+        for(let i=1; i<=10; i++){
+            resultat = a*i;
+            calcul = console.log(a + "x" + i + " = " + resultat);
+            affichage.innerHTML+=a + "x" + i + " = " + resultat + "<br>";
+        }
+        return calcul + " = " + resultat;
+    }
+    tableMult(parseFloat(prompt("Entrez un nombre: ")), document.getElementById("result"));
+}
