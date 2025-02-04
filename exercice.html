@@ -11,49 +11,60 @@
         <nav>
             <h2>Logo ipsum</h2>
             <ul>
-                <a href="accueil.html">
-                    <li>Accueil</li>
-                </a>
-                <a href="exercice.html">
-                    <li>Exercice</li>
-                </a>
-                <a href="presentation_exo.html">
-                    <li>Presentation exo</li>
-                </a>
+                <li>
+                    <a href="accueil.html">
+                        Accueil
+                    </a>
+                </li>
+                <li>
+                    <a href="exercice.html" class="exo_hover_page">
+                        Exercice
+                    </a>
+                </li>
+                <li>
+                    <a href="presentation_exo.html">
+                        Presentation exo
+                    </a>
+                </li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <ul>
-            <li>
-                <button onclick="calculator()">Calculator</button>
-            </li>
-            <li>
-                <button onclick="pairImpair()">Pair ou Impair</button>
-            </li>
-            <li>
-                <button onclick="comparator()">Comparator</button>
-            </li>
-            <li>
-                <button onclick="noteAvis()">Note&Avis</button>
-            </li>
-            <li>
-                <button onclick="multiple3et5()">Multiple de 3 et 5</button>
-            </li>
-            <li>
-                <button onclick="justePrix()">Juste Prix</button>
-            </li>
-            <li>
-                <button onclick="firstBoucle()">boucle</button>
-            </li>
-            <li>
-                <button onclick="boucleWhile()">Boucle While</button>
-            </li>
-            <li>
-                <button onclick="boucleDoWhile()">boucle Do While</button>
-            </li>
-        </ul>
+        <div class="gridButton">
+            <ul>
+                <li>
+                    <button onclick="calculator()">Calculator</button>
+                </li>
+                <li>
+                    <button onclick="pairImpair()">Pair ou Impair</button>
+                </li>
+                <li>
+                    <button onclick="comparator()">Comparator</button>
+                </li>
+                <li>
+                    <button onclick="noteAvis()">Note&Avis</button>
+                </li>
+                <li>
+                    <button onclick="multiple3et5()">Multiple de 3 et 5</button>
+                </li>
+                <li>
+                    <button onclick="justePrix()">Juste Prix</button>
+                </li>
+                <li>
+                    <button onclick="firstBoucle()">boucle</button>
+                </li>
+                <li>
+                    <button onclick="boucleWhile()">Boucle While</button>
+                </li>
+                <li>
+                    <button onclick="boucleDoWhile()">boucle Do While</button>
+                </li>
+                <li><button onclick="exoBoucle()">exoBoucle</button></li>
+                <li><button onclick="exoBoucleSomme()">bouclesomme</button></li>
+                <li></li>
+            </ul>
+        </div>
         <div id="result"></div>
     </main>
 </body>

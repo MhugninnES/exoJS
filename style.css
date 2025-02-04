@@ -34,7 +34,9 @@ nav ul li {
   padding: 10px 25px 10px 25px;
   border-radius: 10px;
 }
-
+main {
+  display: block;
+}
 main #titreAccueil {
   display: flex;
   justify-content: center;
@@ -48,13 +50,22 @@ main #imageJs {
 main #imageJs img {
   width: 60%;
 }
-main ul {
+main .gridButton {
   display: flex;
   justify-content: center;
-  align-items: center;
-  list-style-type: none;
+  width: 100%;
 }
-main ul button {
+main .gridButton ul {
+  display: grid;
+  grid-template-columns: 250px 250px 250px 250px 250px 250px;
+  list-style-type: none;
+  padding: 0;
+}
+main .gridButton ul li {
+  display: flex;
+  justify-content: center;
+}
+main .gridButton button {
   padding: 10px 30px;
   margin: 20px;
   border-radius: 15px;
@@ -63,7 +74,7 @@ main ul button {
   background-color: darkcyan;
   cursor: pointer;
 }
-main ul button:hover {
+main .gridButton button:hover {
   background-color: rgb(153, 50, 204);
   box-shadow: 0 0 10px rgb(155, 60, 250);
   transition: 0.2s ease-in-out;

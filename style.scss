@@ -36,10 +36,15 @@ nav{
             padding:10px 25px 10px 25px;
             border-radius: 10px;
         }
+
+        .exo_hover_page:hover{
+            
+        }
     }
 }
 
 main{
+    display:block;
     #titreAccueil{
         display: flex;
         justify-content: center;
@@ -56,12 +61,21 @@ main{
         }
     }
 
-    ul{
-        display:flex;
+    .gridButton{
+        display: flex;
         justify-content: center;
-        align-items: center;
-        list-style-type: none;
+        width:100%;
+        ul{
+            display:grid;
+            grid-template-columns: 250px 250px 250px 250px 250px 250px;
+            list-style-type: none;
+            padding:0;
 
+            li{
+                display: flex;
+                justify-content: center;
+            }
+        }
         button{
             padding: 10px 30px;
             margin: 20px;

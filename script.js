@@ -88,7 +88,7 @@ function justePrix(){
 
 function firstBoucle(){
     let result = document.getElementById("result");
-    for(i=0; i<=20; i += 2) {
+    for(let i=0; i<=20; i += 2) {
         result.textContent += i + " / ";
     }
 }
@@ -110,4 +110,24 @@ function boucleDoWhile(){
     do{
         nombre = prompt("Donner un nombre entre 0 et 10: ");
     }while(nombre < 0 || nombre > 10 || isNaN(nombre));
+}
+
+function exoBoucle(){
+    for(i=1; i<=10; i++){
+        console.log(i);
+    }
+}
+
+function exoBoucleSomme(){
+    let resultat = 0;
+    for(let i =1; i<101; i++){
+        resultat += i;
+    }
+    console.log(resultat);
+}
+
+function sortVoyelle(){
+    const voyelles = ["a", "e", "i", "o", "u", "y"];
+    let mot="anticonstitutionellement";
+    
 }
