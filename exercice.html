@@ -19,7 +19,7 @@
                 <li class="exo_hover_page">
                     <a href="exercice.html">Exercice</a>
                     <ul class="dropdown">
-                        <li><a href="">submenu</a></li>
+                        <li><a href="euromillions/index.html">Euromillions</a></li>
                         <li><a href="">submenu</a></li>
                         <li><a href="">submenu</a></li>
                     </ul>
@@ -36,41 +36,128 @@
     <main>
         <div class="gridButton">
             <ul>
-                <li>
+                <li id="hoverCalculator">
                     <button onclick="calculator()">Calculator</button>
+                    <div class="hoverButton">
+                        <h2>Calculatrice</h2>
+                        <p>Fonction qui fait office de calculatrice</p>
+                    </div>
                 </li>
                 <li>
                     <button onclick="pairImpair()">Pair ou Impair</button>
+                    <div class="hoverButton">
+                        <h2>Paire ou Impaire</h2>
+                        <p>Test si le nombre est paire ou impaire</p>
+                    </div>
                 </li>
                 <li>
                     <button onclick="comparator()">Comparator</button>
+                    <div class="hoverButton">
+                        <h2>Comparateur</h2>
+                        <p>Compare 2 nombre demandé</p>
+                    </div>
                 </li>
                 <li>
                     <button onclick="noteAvis()">Note&Avis</button>
+                    <div class="hoverButton">
+                        <h2>Note et Avis</h2>
+                        <p>Demande une note et donne un avis en fonction de celle ci</p>
+                    </div>
                 </li>
                 <li>
-                    <button onclick="multiple3et5()">Multiple de 3 et 5</button>
+                    <button onclick="multiple3et5()">Multiple de 3 ou 5</button>
+                    <div class="hoverButton">
+                        <h2>Multiple de 3 ou 5</h2>
+                        <p>Test si le nombre entré est un multiple de 3 ou de 5</p>
+                    </div>
                 </li>
                 <li>
                     <button onclick="justePrix()">Juste Prix</button>
+                    <div class="hoverButton">
+                        <h2>Juste Prix</h2>
+                        <p>Demande de trouvé un nombre prédéfini</p>
+                    </div>
                 </li>
                 <li>
-                    <button onclick="firstBoucle()">boucle</button>
+                    <button onclick="firstBoucle()">boucle For</button>
+                    <div class="hoverButton">
+                        <h2>Boucle For</h2>
+                        <p>Exemple de boucle For</p>
+                    </div>
                 </li>
                 <li>
                     <button onclick="boucleWhile()">Boucle While</button>
+                    <div class="hoverButton">
+                        <h2>Boucle While</h2>
+                        <p>Exemple de boucle While</p>
+                    </div>
                 </li>
                 <li>
                     <button onclick="boucleDoWhile()">boucle Do While</button>
+                    <div class="hoverButton">
+                        <h2>Boucle Do While</h2>
+                        <p>Exemple de boucle Do While</p>
+                    </div>
                 </li>
-                <li><button onclick="exoBoucle()">exoBoucle</button></li>
-                <li><button onclick="exoBoucleSomme()">bouclesomme</button></li>
-                <li><button onclick="countVoyelle()">voyelle</button></li>
-                <li><button onclick="pyramide()">pyramide</button></li>
-                <li><button onclick="multiplicativeTable()">Table</button></li>
-                <li><button onclick="divisible()">Divisible 3 et 5</button></li>
-                <li><button onclick="exoFunction2()">Function EstPaire</button></li>
-                <li><button onclick="exoFunction3()">TableMulti</button></li>
+                <li>
+                    <button onclick="exoBoucle()">exoBoucle</button>
+                    <div class="hoverButton">
+                        <h2>Exercise Boucle</h2>
+                        <p>Exercice de compréhension des boucles</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="exoBoucleSomme()">bouclesomme</button>
+                    <div class="hoverButton">
+                        <h2>Boucle Somme</h2>
+                        <p>Créer une boucle pour faire la somme des nombres de 1 a 100</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="countVoyelle()">voyelle</button>
+                    <div class="hoverButton">
+                        <h2>Compteur voyelle</h2>
+                        <p>Compte le nombre de voyelle dans le(s) mot(s) demandé</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="pyramide()">pyramide</button>
+                    <div class="hoverButton">
+                        <h2>Pyramide</h2>
+                        <p>Créer une pyramide en "*"</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="multiplicativeTable()">TableMult</button>
+                    <div class="hoverButton">
+                        <h2>Table de Multiplication</h2>
+                        <p>Demande un chiffre ou un nombre et affiche sa table de multiplication jusqu'a 10</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="divisible()">Divisible 3 et 5</button>
+                    <div class="hoverButton">
+                        <h2>Divisible par 3 et 5</h2>
+                        <p>Donne les nombres divisible par 3 et 5 de 1 a 50</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="exoFunction2()">Function EstPaire</button>
+                    <div class="hoverButton">
+                        <h2>Fonction "est Paire"</h2>
+                        <p>Fonction pour testé si le nombre donné est paire ou impaire en renvoyant "true" ou "false"</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="exoFunction3()">TableMulti</button>
+                    <div class="hoverButton">
+                        <h2>Table de Multiplication</h2>
+                        <p>Fonction qui demande un nombre et qui retourne une table de multiplication</p>
+                    </div>
+                </li>
+                <li>
+                    <button onclick="exoTableau1()">Tableau </button>
+                </li>
             </ul>
         </div>
         <div id="result"></div>

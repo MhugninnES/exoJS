@@ -226,3 +226,17 @@ function exoFunction3(){
     }
     tableMult(parseFloat(prompt("Entrez un nombre: ")), document.getElementById("result"));
 }
+
+function exoTableau1(){
+    let animaux=["Chien", "Chat", "Lapin"];
+
+        //solution 1
+    // for(let i=0; i<animaux.length; i++){
+    //     console.log(animaux[i]);
+    // }
+    
+        //solution 2
+    for(const pet of animaux){
+        console.log(pet);
+    }
+}

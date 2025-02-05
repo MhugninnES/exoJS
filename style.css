@@ -80,6 +80,19 @@ main .gridButton ul {
 main .gridButton ul li {
   display: flex;
   justify-content: center;
+  position: relative;
+}
+main .gridButton ul li .hoverButton {
+  position: absolute;
+  top: 70%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  display: none;
+  z-index: 1;
+}
+main .gridButton ul li:hover .hoverButton {
+  display: block;
 }
 main .gridButton button {
   padding: 10px 30px;
