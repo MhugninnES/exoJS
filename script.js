@@ -240,3 +240,14 @@ function exoTableau1(){
         console.log(pet);
     }
 }
+
+function removeArrayElement(){
+    let animaux=["Chien", "Chat", "Lapin"];
+    
+    animaux.push("Oiseau");
+    animaux.splice(1, 1);
+
+    for(const p of animaux){
+        console.log(p);
+    }
+}
