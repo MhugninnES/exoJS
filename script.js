@@ -251,3 +251,34 @@ function removeArrayElement(){
         console.log(p);
     }
 }
+
+
+
+
+
+
+
+
+
+function exo1_part1_WTLX(){    
+    function addition(a, b, affichage){
+        let c = a+b;
+        affichage.innerHTML = a + "+" + b + "= " + c;
+    }
+    console.log(addition(parseFloat(prompt("Entrez un nombre: ")), parseFloat(prompt("Entrez un deuxième nombre: ")), document.getElementById("result2")));
+}
+
+function exo2_part1_WTLX(){
+    function MinuteToSecond(minutes, affichage){
+        let seconde = minutes*60;
+        affichage.innerHTML = minutes + " vaut " + seconde + " secondes";
+    }
+    console.log(MinuteToSecond(parseFloat(prompt("Entrez un nombre de minutes: ")), document.getElementById("result2")));
+}
+
+function exo3_part1_WTLX(){
+    function Incrementation(a, affichage){
+        affichage.innerHTML= a+1;
+    }
+    console.log(Incrementation(parseFloat(prompt("Entrez un nombre: ")), document.getElementById("result2")));
+}
