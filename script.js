@@ -290,17 +290,16 @@ function reverseArray(){
 }
 
 function AnalyzingNote(){
-    function analyserNote(note){
-        let noteMin = Math.min(note);
-        let noteMax = Math.max(note);
-        // let moyenne = note.reduce((accumulator, currentValue)=> accumulator + currentValue, 0);
+    function analyserNote(note, affichage){
+        Math.round(note);
+        let noteMin = Math.min(...note);
+        let noteMax = Math.max(...note);
+        let sum = note.reduce((acc, element) => acc+element);
+        let moyenne = sum/note.length;
 
-        console.log(noteMin);
-        console.log(noteMax);
-        console.log(moyenne);
-
+        affichage.innerHTML = "La note la plus basse est " + noteMin + "/20 et la plus haute est " + noteMax + "/20 le tout pour une moyenne global de " + moyenne.toFixed(2) + "/20.";
     }
-    analyserNote();
+    analyserNote([5,12,4,6,19,17,4.5], document.getElementById("result"));
 }
 
 // --- 2. Exercise WayToLearnX ---
