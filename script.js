@@ -1,3 +1,4 @@
+// --- 1. Exercise Bryan ---    
 function calculator(){
     let a = parseFloat(prompt("Entrez un nombre: "));
     let operator = prompt("Entrez un operateur: ");
@@ -258,7 +259,7 @@ function removeArrayElement(){
 
 
 
-
+// --- 2. Exercise WayToLearnX ---
 
 function exo1_part1_WTLX(){    
     function addition(a, b, affichage){
@@ -281,4 +282,26 @@ function exo3_part1_WTLX(){
         affichage.innerHTML= a+1;
     }
     console.log(Incrementation(parseFloat(prompt("Entrez un nombre: ")), document.getElementById("result2")));
+}
+
+function exo4_part1_WTLX(){
+    function airTriangle(base, hauteur, affichage){
+        affichage.innerHTML = (base*hauteur)/2;
+    }
+    airTriangle(parseFloat(prompt("Entrez la base du triangle: ")), parseFloat(prompt("Entrez la hauteur du triangle: ")), document.getElementById("result2"));
+}
+
+function exo5_part1_WTLX(){
+    function reverseString(mot, affichage){
+        affichage.innerHTML= mot.split("").reverse().join("");
+    }
+    reverseString(prompt("Entrez un mot: "), document.getElementById("result2"));
+}
+
+
+function resetResult(){
+    let result = document.getElementById("result");
+    result.innerHTML = "";
+    let result2 = document.getElementById("result2");
+    result2.innerHTML = "";
 }

@@ -53,6 +53,19 @@ nav ul .exo_hover_page:hover .dropdown {
 main {
   display: block;
 }
+main .clearResult {
+  position: sticky;
+  top: 90%;
+  left: 90%;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 100%;
+  border: transparent;
+  padding: 20px 20px;
+  cursor: pointer;
+}
 main h5 {
   margin: 2% 25% 2% 25%;
   width: 50%;
@@ -115,6 +128,12 @@ main .gridButton button:hover {
   background-color: rgb(153, 50, 204);
   box-shadow: 0 0 10px rgb(155, 60, 250);
   transition: 0.2s ease-in-out;
+}
+main #result {
+  font-size: 35px;
+}
+main #result2 {
+  font-size: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
