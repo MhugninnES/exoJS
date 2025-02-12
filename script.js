@@ -248,16 +248,60 @@ function removeArrayElement(){
     animaux.push("Oiseau");
     animaux.splice(1, 1);
 
+    let index = animaux.indexOf("Lapin"); //retourne l'index de l'éléments rechercher
+
     for(const p of animaux){
         console.log(p);
     }
 }
 
+function findElement(){
+    let array = ["chien", "chat", "lapin", "oiseau"];
+    function trouverElement(array, element, affichage){
+        affichage.innerHTML=array.includes(element);
+    }
+    
+    trouverElement(array, prompt("Entrez un animal: "), document.getElementById("result"));
+}
 
+function resultArray(){
+    let numberArray = [5, 4, 7];
+    function resultatTableau(array){
+        let sum = 0;
+        // for(let nombre of array){
+        //     sum += nombre;
+        // }
+        // console.log(sum);
+        // return sum;
 
+        sum = array.reduce((acc, x) => acc + x, 0);
+        console.log(sum);
+    }
+    resultatTableau(numberArray);
+}
 
+function reverseArray(){
+    let tableau1 = [5,3,6,54];
+    let tableau2 = ["oiseau", "cheval", "Dragon"];
+    function retournerTableau(array,affichage){
+        affichage.innerHTML = array.reverse();
+    }
+    retournerTableau(tableau2, document.getElementById("result"));
+}
 
+function AnalyzingNote(){
+    function analyserNote(note){
+        let noteMin = Math.min(note);
+        let noteMax = Math.max(note);
+        // let moyenne = note.reduce((accumulator, currentValue)=> accumulator + currentValue, 0);
 
+        console.log(noteMin);
+        console.log(noteMax);
+        console.log(moyenne);
+
+    }
+    analyserNote();
+}
 
 // --- 2. Exercise WayToLearnX ---
 
