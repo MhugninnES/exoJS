@@ -1,4 +1,11 @@
+function resetResult(){
+    let result = document.getElementById("result");
+    result.innerHTML = "";
+    let result2 = document.getElementById("result2");
+    result2.innerHTML = "";
+}
 // --- 1. Exercise Bryan ---    
+
 function calculator(){
     let a = parseFloat(prompt("Entrez un nombre: "));
     let operator = prompt("Entrez un operateur: ");
@@ -291,15 +298,99 @@ function reverseArray(){
 
 function AnalyzingNote(){
     function analyserNote(note, affichage){
-        Math.round(note);
-        let noteMin = Math.min(...note);
-        let noteMax = Math.max(...note);
-        let sum = note.reduce((acc, element) => acc+element);
-        let moyenne = sum/note.length;
+        //mettre les opérateur directement dans l'obejt
+        // let noteMin = Math.min(...note);
+        // let noteMax = Math.max(...note);
+        let sum = note.reduce((acc, element) => acc+element, 0)/note.length;
+        // let moyenne2 = sum/note.length;
+        const result={
+                mini: Math.min(...note),
+                maxi: Math.max(...note),
+                moyenne: sum
+        }
 
-        affichage.innerHTML = "La note la plus basse est " + noteMin + "/20 et la plus haute est " + noteMax + "/20 le tout pour une moyenne global de " + moyenne.toFixed(2) + "/20.";
+        affichage.innerHTML= result.mini + " est la note minimale, " + result.maxi + " est la note maximale, " + result.moyenne.toFixed(2) + " est la moyenne générale des notes.";
     }
     analyserNote([5,12,4,6,19,17,4.5], document.getElementById("result"));
+}
+
+function objectExercise(){
+    let affichage = document.getElementById("result");
+    let livre = {
+        titre: "Les fourmis",
+        auteur: "Bernard Werber",
+        annee: 1991
+    }
+
+    affichage.innerHTML = "<p>Le livre " + livre.titre + " écrit par " + livre.auteur + " date de " + livre.annee + "</p>";
+
+    console.log(livre.titre);
+    console.log(livre.auteur);
+    console.log(livre.annee);
+
+    livre.genre = "animalier";
+
+    affichage.innerHTML += "<p>Ajout du genre " + livre.genre + "</p>";
+    console.log(livre.genre);
+
+    livre.annee = 1992;
+    affichage.innerHTML +="changement de date " + livre.annee;
+    console.log(livre.annee);
+
+    delete livre.auteur;
+    console.log(livre.auteur);
+}
+
+function objectExo2(){
+    let affichage = document.getElementById("result");
+    let film = {
+        titre: "Seigneur des Anneaux",
+        annee: 2001,
+        realisateur:{
+            prenom: "Peter",
+            nom: "Jackson"
+        }
+    }
+
+    affichage.innerHTML = "<p>Le nom du réalisateur est " + film.realisateur.nom + " et son prenom est " + film.realisateur.prenom + "</p>";
+}
+
+function Closet(){
+    let panier ={
+        article1:{
+            nomDuProduit: "Monster Hunter Wilds",
+            valeur:70
+        },
+        article2:{
+            nomDuProduit: "Cronus ZEN",
+            valeur: 190
+        },
+        artcile3:{
+            nomDUProduit: "Clavier ergonomique",
+            valeur:300
+        }
+    }
+    // console.log(panier);
+
+    for(let x in panier){
+        // console.log(x, panier[x]);
+        document.getElementById("result").innerHTML += "<p> L'" + x + " " + panier[x] + "</p>";
+    }
+}
+
+function functionInObject(){
+    let joueur = {
+        nom: "Jean-Jacque",
+        score: 0,
+        ajouterScore(score){
+            this.score += score;
+        }
+    }
+    joueur.ajouterScore(parseFloat(prompt("Entrez un score: ")));
+    joueur.ajouterScore(parseFloat(prompt("Entrez un score: ")));
+    joueur.ajouterScore(parseFloat(prompt("Entrez un score: ")));
+    
+    document.getElementById("result").innerHTML = "Le score est de " + joueur.score;
 }
 
 // --- 2. Exercise WayToLearnX ---
@@ -341,10 +432,25 @@ function exo5_part1_WTLX(){
     reverseString(prompt("Entrez un mot: "), document.getElementById("result2"));
 }
 
+function exo6_part1_WTLX(){
+    function getmax(a, b, c, affichage){
+        if(a>b && a>c){
+            affichage.innerHTML = a + " est plus grand";
+        }else if(b>c && b>a){
+            affichage.innerHTML = b + " est plus grand";
+        }else{
+            affichage.innerHTML = c + " est plus grand"
+        }
+    }
 
-function resetResult(){
-    let result = document.getElementById("result");
-    result.innerHTML = "";
-    let result2 = document.getElementById("result2");
-    result2.innerHTML = "";
+    getmax(55,4,9, document.getElementById("result2"));
 }
+
+function exo7_part1_WTLX(){
+    function returnFirst(array){
+        return array[0];
+    }
+
+    document.getElementById("result2").innerHTML = returnFirst([4, 32, 11]);
+}
+
