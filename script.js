@@ -393,6 +393,23 @@ function functionInObject(){
     document.getElementById("result").innerHTML = "Le score est de " + joueur.score;
 }
 
+function lastObjectExercise(){
+    let users = [
+        {nom:"jean-jacques", email:"laboulangerieCmapassion@gmail.com", affichage(){
+            return "bonjour je suis "+ this.nom + " et mon adresse mail est " + this.email
+        }},
+        {nom:"denis", email:"delacitédesciclamen@gmail.com", affichage(){
+            return "bonjour je suis "+ this.nom + " et mon adresse mail est " + this.email
+        }}
+    ]
+
+    for(let x in users){
+        document.getElementById("result").innerHTML+="<p>"+ users[x].affichage() +"</p>";
+    }
+    // document.getElementById("result").innerHTML="<p>" + users[0].affichage() + "</p>"
+    // document.getElementById("result").innerHTML+="<p>" + users[1].affichage() +"</p>"
+}
+
 // --- 2. Exercise WayToLearnX ---
 
 function exo1_part1_WTLX(){    
