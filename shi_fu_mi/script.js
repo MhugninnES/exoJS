@@ -15,12 +15,30 @@ function ShiFuMi(){
         stringResult = "Ciseau";
     }
     console.log(stringResult);
+    return stringResult;
 }
 
 function startGame(){
-    ShiFuMi();
+    let playerChoice = prompt("Pierre, Papier, Ciseau");
+    let showResult = document.getElementById("resultat");
+    let random = ShiFuMi();
+    if(playerChoice === random){
+        showResult.innerHTML = "Egailité";
+        score("bot");
+    }
 }
 
 function resetGame(){
 
+}
+
+function score(who){
+    let scoreP = 0;
+    let scoreB = 0;
+
+    if(who === "bot"){
+        scoreB =+ 1;
+    }
+
+    console.log("score " + scoreB);
 }
