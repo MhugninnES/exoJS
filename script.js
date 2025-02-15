@@ -470,4 +470,3 @@ function exo7_part1_WTLX(){
 
     document.getElementById("result2").innerHTML = returnFirst([4, 32, 11]);
 }
-
