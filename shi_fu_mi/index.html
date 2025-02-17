@@ -6,15 +6,27 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body> 
     <main>
         <h1>Shi Fu Mi</h1>
         
-        <button onclick="startGame()">randomizer</button>
-        
-        <div id="resultat">
+        <div class="showResult">
+            <div id="resultat">
             
+            </div>
+            <div id="score">
+            
+            </div>
         </div>
+
+        <div class="button">
+            <button onclick="startGame('Pierre')" id="pierre">Pierre</button>
+            <button onclick="startGame('Papier')" id="papier">Papier</button>
+            <button onclick="startGame('Ciseau')" id="ciseau">Ciseau</button>
+        </div>
+
+
+        <button onclick="resetGame()" id="reset">reset</button>
     </main>
 </body>
 <script src="script.js"></script>

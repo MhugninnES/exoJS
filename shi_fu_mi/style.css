@@ -1,4 +1,51 @@
+main{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
 h1{
     display:flex;
     justify-content:center;
+    font-weight: bold;
+}
+h2{
+    font-weight:bold;
+    font-size: 60px;
+    margin:0;
+    text-align: center;
+}
+h3{
+    font-weight:bold;
+    font-size: 45px;
+    margin:0;
+    border: solid 2px black;
+    text-align:center;
+}
+.showResult{
+    min-height: 150px;
+    min-width: 250px;
+}
+
+button{
+    padding: 25px;
+    margin: 10px;
+}
+
+#pierre{
+    background-color: gray;
+    color:white;
+}
+#papier{
+    background-color: white;
+    color: black;
+}
+#ciseau{
+    background-color: blue;
+    color:white;
+}
+#reset{
+    margin: 10%;
+    background-color: red;
+    color:white;
 }
